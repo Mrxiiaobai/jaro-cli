@@ -1,20 +1,28 @@
 {
   "name": "@maloulab/cli",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
     "prepublishOnly": "npm version patch"
   },
+  "keywords": [
+    "maloulab",
+    "maloulab/cli",
+    "@maloulab/cli",
+    "weapp"
+  ],
   "bin": {
-    "maloulab": "./bin/cli.js"
+    "malou": "./bin/cli.js"
   },
   "files": [
     "bin",
     "README.md"
   ],
-  "keywords": [],
-  "author": "",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "author": "savior",
   "license": "ISC",
   "description": "",
   "dependencies": {},
