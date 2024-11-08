@@ -17,7 +17,8 @@
   },
   "files": [
     "bin",
-    "README.md"
+    "README.md",
+    "package.json"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
