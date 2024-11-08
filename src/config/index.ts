@@ -6,6 +6,7 @@ const config = {
   defaultFileName: "dist",
   successColor: "\x1b[32m%s\x1b[0m",
   logPrefix: "malou",
+  fileAfterfix: ["js", "json"],
 };
 
 export default config;
