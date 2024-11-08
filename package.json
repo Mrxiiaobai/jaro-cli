@@ -1,0 +1,29 @@
+{
+  "name": "@maloulab/cli",
+  "version": "1.0.1",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "prepublishOnly": "npm version patch"
+  },
+  "bin": {
+    "maloulab": "./bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-cli": "^5.1.4",
+    "@types/node": "^22.9.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "5",
+    "webpack-shell-plugin-next": "^2.3.2"
+  }
+}
