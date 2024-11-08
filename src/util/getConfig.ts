@@ -28,7 +28,10 @@ export function getWeappConfiguration() {
   };
 
   console.log("-------.malou.config配置读取中----------");
-  if (!fs.existsSync(configPath)) {
+  if (
+    !fs.existsSync(`${configPath}.js`) &&
+    !fs.existsSync(`${configPath}.json`)
+  ) {
     console.log("未发现.malou.config配置文件，使用默认配置");
     return defaultConfig;
   }
